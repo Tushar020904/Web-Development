@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Assignment 01</title>
+    <style>
+        .container{
+            margin: auto;
+            display: flex;
+            align-content: center;
+            flex-wrap: nowrap;
+        }
+        .inside_container{
+            margin: auto;
+            display: flex;
+            align-content: center;
+            flex-wrap: nowrap;
+        }
+        .box1{
+            
+            width: 33%;
+            height: auto;
+            background-color: rgb(232, 122, 32);
+            /* border: 3px solid black; */
+            border-radius: 17px;
+            border-spacing: 3px;
+            font-size: 2em;
+            padding: 9px;
+            margin: 5px;
+            color:white;
+        }
+        .box2{
+            width: 25%;
+            height: auto;
+            background-color: rgb(232, 122, 32);
+            /* border: 3px solid black; */
+            border-radius: 17px;
+            border-spacing: 3px;
+            font-size: 2em;
+            padding: 9px;
+            margin: 5px;
+            color:white;
+        }
+        .box3{
+            width: 25%;
+            height: auto;
+            background-color: rgb(232, 122, 32);
+            /* border: 3px solid black; */
+            border-radius: 17px;
+            border-spacing: 3px;
+            font-size: 2em;
+            padding: 9px;
+            margin: 5px;
+            color:white;
+        }
+        .box{
+            width: 33%;
+            height: auto;
+            background-color: rgb(245, 245, 245);
+            color: orange;
+            /* border: 3px solid black; */
+            border-radius: 17px;
+            border-spacing: 3px;
+            /* font-size: 2em; */
+            padding: 9px;
+            margin: 5px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">1
+            <div class="inside_container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+            </div>
+            <div class="inside_container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+            </div>
+            <div class="inside_container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+            </div>
+        </div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+    </div>
+    <div class="container">
+        <div class="box2">1</div>
+        <div class="box2">2</div>
+        <div class="box2">3</div>
+        <div class="box2">4</div>
+    </div>
+    <div class="container">
+        <div class="box3">1</div>
+        <div class="box3">2</div>
+        <div class="box3">3</div>
+        <div class="box3">4</div>
+        <div class="box3">5</div>
+    </div>
+</body>
+</html>

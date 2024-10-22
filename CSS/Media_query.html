@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Query</title>
+    <style>
+        html{
+            font-size: 1em;
+        }
+        @media screen and (max-width: 600px) {
+            body{color: rgb(187, 5, 87);
+            }
+        }
+        @media screen and (orientation: landscape) {
+        body{
+            color: green;
+        }       
+        }
+        /* using both simultaneously */ 
+        @media screen and (max-width: 600px) and (orientation: landscape) {
+            body{color: brown;}
+            
+        }
+        /* using any one  */
+        @media screen and (max-width: 600px), screen and (orientation: landscape) {
+            body{color: rgb(0, 255, 195);}
+        }
+        @media not all and (orientation: landscape) {
+            body{
+                color: red;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sit error et excepturi earum voluptatum asperiores, quo, voluptatem quis consequatur architecto libero quidem. Alias distinctio dignissimos ullam ex deserunt quam veritatis perspiciatis ratione? Qui, sit nisi deserunt illum iure laudantium?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eligendi minima accusamus voluptates provident, est perferendis dolorum deserunt delectus quidem repellendus esse voluptatibus quasi ut tenetur doloremque quam perspiciatis blanditiis doloribus, magni fugiat harum nostrum modi? Accusantium ipsum rerum voluptate est libero aspernatur culpa aperiam beatae voluptates, debitis optio sunt quasi asperiores unde similique ipsa cumque sint sit! Veritatis in perspiciatis perferendis eveniet adipisci voluptatem, vitae dolorem sapiente, porro impedit hic quisquam magni at eligendi modi reprehenderit dolores assumenda. Fuga sed, neque necessitatibus rerum soluta impedit totam minima earum nisi vitae odio voluptatem? Eum expedita sint eius voluptatibus quasi aspernatur. Sed optio, culpa dicta quidem officia a laboriosam quasi odit ullam cum magni totam minus consectetur sint, debitis earum molestias quisquam porro? Aliquid odio reiciendis adipisci eos perferendis dolore quibusdam quaerat ipsum ut aspernatur ad corporis enim tempora illo dolorem, eius suscipit ducimus consectetur. Libero tenetur mollitia veniam? Quia fugit distinctio ipsa, deserunt adipisci itaque maxime consectetur, architecto nisi, delectus fugiat minima sunt! Doloribus hic aut aperiam blanditiis quae ad assumenda et veniam quia commodi dolor dignissimos at modi voluptates quidem eligendi, mollitia, temporibus fugiat totam quaerat expedita. Est corrupti omnis provident, veniam harum alias deserunt sint dicta. Nulla corporis minus atque temporibus aut amet consequuntur nemo deleniti illo ipsum quisquam neque tempora, perspiciatis dignissimos iure harum consequatur totam laboriosam adipisci et nostrum eum. Laborum impedit atque explicabo vitae cum sint saepe, non illum maxime enim adipisci distinctio vel id aliquid qui quibusdam excepturi quas ex? Et excepturi fugiat sunt doloremque hic eos ipsam laborum, id cupiditate ea quae, quos temporibus quod voluptatem voluptas tenetur unde, laudantium minima. In repellendus sapiente maxime distinctio atque voluptate est veritatis architecto, ea totam alias delectus rem quaerat vero nesciunt facilis tenetur voluptatem et dolor magnam ducimus perferendis doloremque, eum nemo. Illum veniam voluptate id minus consequuntur laboriosam alias perspiciatis repudiandae obcaecati sunt temporibus praesentium ipsam et officia ad, rem laborum voluptatibus unde quam incidunt itaque cupiditate? Expedita animi dolorum vero eveniet repellendus quae, officia mollitia voluptatibus ut modi minus amet dignissimos id libero magnam rem pariatur eaque necessitatibus ipsum. Vero praesentium facere voluptas ipsa, eum iure voluptates odio. Aliquid neque modi eligendi soluta repellat saepe exercitationem, delectus natus. Debitis, unde! Omnis debitis dolor voluptatum iste, numquam suscipit expedita facere culpa maiores minima fugiat possimus ratione nisi esse voluptatem totam voluptate cumque quos at rem necessitatibus quasi. Nostrum sit necessitatibus distinctio nobis, cupiditate dolorum.</p>
+
+</body>
+</html>

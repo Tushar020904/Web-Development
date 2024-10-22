@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Assignment- Loader</title>
+    <style>
+        div{
+            position: relative;
+            left: 50px;
+            top: 50px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 15px solid rgb(151, 149, 149);
+            border-top: 15px solid rgb(33, 196, 74);
+            animation: loader 1.5s ease-in-out 2s infinite normal;
+        }
+        @keyframes loader{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+    </div>
+</body>
+</html>

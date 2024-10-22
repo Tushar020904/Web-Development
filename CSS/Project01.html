@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        .container{
+            background-color: #efefef;
+        /* padding: 5px 25px 15px 25px ;  */
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        font-size: 25px;
+        }
+        .box{
+            background-color: rgb(21, 201, 42);
+            padding: 10px 20px 10px 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        input[type="submit"]{
+            border: none;
+            background-color: rgb(11, 197, 98);
+            width: 100%;
+            padding: 12px 20px;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover{
+            background-color: #1ac260;
+            cursor: pointer;
+            font-size: 90%;
+            
+        }
+        .box1{
+            padding: 5px 25px 15px 25px ;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        input[type=Card_number],
+        select, textarea{
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: #fff;
+            padding: 10px 17px;
+            margin: 12px;
+            font-size: 16px;
+            width: 90%;
+        }
+        .first{
+            font-size: 40px;
+        }
+        .second{
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <section class="box">
+        <span class="first">Contact Form </span><br>
+        <span class="second">Please fill all the texts in the fields.</span>
+    </section>
+    <div class="box1">
+    <form action="">
+        <p>
+            Your Name: <br>
+            <input type="text" required placeholder="Your Full Name" >
+        </p>
+        <p>
+            Your Email: <br>
+            <input type="text" placeholder="Valid Email Address" required>
+        </p>
+        <p>
+            Message: <br>
+            <textarea name="message" id="message" placeholder="Your message to Us" cols="40" rows="10" required></textarea>
+        </p>
+        <p>
+            Subject: <br>
+            <input type="text" placeholder="Job Inquiry" required>
+        </p>
+        <p>
+            <input type="submit" name="submit" id="submit" value="Send">
+        </p>
+    </form>
+</div>
+
+</div>
+</body>
+</html>

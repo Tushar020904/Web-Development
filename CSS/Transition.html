@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            background-color: lightblue;
+            border: 6px solid black;
+            text-align: center;
+            transition: all 1s ease-in-out ;     /* this only governs ki transition lagana hai ya nhi*/
+            /* rotate: 45deg; */
+            position: relative;
+            top: 300px;
+            left: 300px;
+            
+        }
+        div:hover{
+            background-color: red;
+            color: white;
+            transform: scale(2,2.5);     /* ek time pr ek hee lag rha hai*/
+            /* transform: translate(200px, 50px); */
+            /* transform: skew(30deg); */
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>This is a box</h1>
+    </div>
+</body>
+</html>

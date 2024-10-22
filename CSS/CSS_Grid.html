@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        *{font-size: 26px;}
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;     /* Other way can be repeat(4, 1fr);*/  /* Or ---> repeat(autofill, minman(200px, 1fr) */
+            grid-gap: 20px;
+            grid-auto-rows: minmax(100px,auto);
+            grid-auto-columns: 50px;
+        }
+        .items{
+            background-color: coral;
+            border: 7px rgb(106, 240, 10) solid;
+            border-radius: 5px;
+        }
+        #item-1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr );
+        }
+        .item-1-container{
+            border: 5px rgb(55, 0, 255) solid;
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="items" id="item-1">
+            <div class="item-1-container">dabbe ke andar dabba 1</div>
+            <div class="item-1-container">dabbe ke andar dabba 2</div>
+            <div class="item-1-container">dabbe ke andar dabba 3</div>
+        </div>
+        <div class="items">Dabba 2</div>
+        <div class="items">Dabba 3</div>
+        <div class="items">Dabba 4</div>
+        <div class="items">Dabba 5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            font-size: 20px;
+            padding: 0px 20px 30px 0px;
+            line-height: 1.4;
+        }
+        .flex-container{
+            display: flex; 
+            /* flex-direction: column ; */
+            flex-wrap:  nowrap;
+            align-content: center;   /*box will be staying together*/ 
+            /* align-items: flex-end; */
+            
+        }
+        .flex-item{
+            height: 75px; 
+            width: 75px;
+            background-color: lightskyblue;
+            border: 2px solid blue;
+            text-align: center;
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+        }
+        #flex-item-1{
+            background-color: pink;
+        }
+        #flex-item-2{
+            background-color: gold;
+        }
+        #flex-item-3{
+            background-color: blueviolet;
+        }
+        #flex-item-4{
+            background-color: #d81e1e; 
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item" id="flex-item-1">1</div>
+        <div class="flex-item" id="flex-item-2">2</div>
+        <div class="flex-item" id="flex-item-3">3</div>
+        <div class="flex-item" id="flex-item-4">4</div>
+        <div class="flex-item" id="flex-item-1">1</div>
+        <div class="flex-item" id="flex-item-2">2</div>
+        <div class="flex-item" id="flex-item-3">3</div>
+        <div class="flex-item" id="flex-item-4">4</div>
+    </div>
+</body>
+</html>

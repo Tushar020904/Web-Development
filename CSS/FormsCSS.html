@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 15px 30px;
+            padding: 8px;
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif Geneva, Verdana, sans-serif;
+        }
+        .container{
+        background-color: rgb(239, 239, 239);
+        padding: 5px 20px 15px 20px ; 
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        font-size: 18px;
+        }
+        fieldset{
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        input[type=Card_number],
+        select, textarea{
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            padding: 10px 17px;
+            margin: 12px;
+            font-size: 16px;
+        }
+        input[type="submit"]{
+            border: none;
+            background-color: rgb(11, 197, 98);
+            width: 100%;
+            padding: 12px 20px;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover{
+            background-color: #1d954f;
+            cursor: pointer;
+            font-size: 90%;
+            
+        }
+        .container{
+            font-size:22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Payment Form</h1>
+
+    <!-- Contact Info -->
+    <h3>Contact Details</h3>
+
+    <form action="">
+        <p><b>Note:</b> Required fields are followed by a star (*)</p>
+        <p>Name: * <input type="text" placeholder="Tushar Bhatt" id="name" required></p>
+
+    <fieldset>
+        <legend>Gender</legend>
+        <p>
+            <label for="male">Male <input type="radio" name="Gender" id="male"></label>
+            <label for="Female">Female <input type="radio" name="Gender" id="Female"></label>
+        </p>
+    </fieldset>
+
+    <p>Address:<br></Address:br> <textarea name="Address" id="Add ress" cols="50" rows="10" placeholder="Enter your Address"></textarea></p>
+    <p>Email: * <input type="email" name="email" id="email" placeholder="abcdef@gmail.com" required></p>
+    </form>
+    <p>Pincode: *<input type="number" name="Pincode" id="Pincode" placeholder="123456" required maxlenght="6"></p>
+
+    <!-- Payment Info -->
+    <h2>Payment Information</h2>
+    <p>Card Type: *
+        <select name="Card" id="Card" required>
+            <option value="">--Select your Card</option>
+            <option value="Rupay">Rupay</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="visa">visa</option>
+            <option value="RazorPay">RazorPay</option>
+        </select>
+    </p>
+    <p>Card Number: *<input type="Card_number" name="Card_number" id="Card_number" required maxlength="12" placeholder="1111-2222-3333-4444"></p>
+    <p>Expiration Date: *<input type="date" name="date" id="date"></p>
+    <p>CVV: *<input type="password"  name="CVV" id="CVV" maxlength="3" placeholder="123 "></p>
+    <input type="submit" name="submit" id="submit" value="Pay Now">
+</div>
+
+</body>
+</html>
